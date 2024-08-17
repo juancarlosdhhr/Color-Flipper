@@ -51,7 +51,8 @@ aplicación funcionará exactamente igual.  */
   
       document.body.style.backgroundColor = newColor;
       //Le aplicamos el background color con el código de color seleccionado
-      
+      const colorNameText = `${COLOR_PALETTE[newColor]} | ${newColor}` 
+  colorName.innerText = COLOR_PALETTE[newColor] ? colorNameText : "-";
     });
   };
   
@@ -85,7 +86,6 @@ texto con el color seleccionado. Para ello vamos a ir un momento a nuestro
   el nombre y su código: */
 
 
-  const colorNameText = `${COLOR_PALETTE[newColor]} | ${newColor}` 
-  colorName.innerText = COLOR_PALETTE[newColor] ? colorNameText : "-";
+  
 
 
